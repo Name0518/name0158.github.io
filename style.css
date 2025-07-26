@@ -1,20 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:MiSans;
+  color: black;
+}
+
+
 body{
-    
+    min-height: 100vh;
 }
+
+
+
+.header {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  padding: 1.3em 10%;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
-/* 📱 Mobile styles */
+
+.navbar a{
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 1.2em;
+}
+/* Mobile styles */
 @media (max-width: 768px) {
-  .card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .card-right {
-    padding-left: 0;
-    margin-top: 1.5em;
-  }
-
-  .socials a img {
-    margin: 0 8px;
-  }
+  
 }
