@@ -9,13 +9,15 @@
 
 body{
     min-height: 100vh;
-     background-image:"main.jpg";
-  background-repeat: no-repeat;
-  width: 100vh;
+    background-image:url("images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
 }
 
 .mainLanding{
- 
+    min-height: 100vh;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -25,20 +27,40 @@ body{
   left:0;
   width: 100%;
   padding: 1.3em 10%;
-  background: red;
+  background: white;
+  opacity: 70%;
   display: flex;
   justify-content: space-between;
   z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  min-width: 40vw;
 }
 
 .navbar a{
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 500;
+  opacity: 100%;
 }
 
 .logo {
   font-size: 1.2em;
+   text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  min-width: 5vw;
+}
+
+.socials i {
+  height: 10%;
+  padding-right: 10px;
 }
 /* Mobile styles */
 @media (max-width: 768px) {
