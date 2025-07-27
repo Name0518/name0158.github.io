@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "MiSans";
+  src: url("fonts/MiSans-Medium.otf") format("opentype"),
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:MiSans;
+  font-family: MiSans;
   color: black;
 }
 
@@ -33,7 +38,7 @@ body{
   justify-content: space-between;
   z-index: 100;
 }
-
+/*Navbar styles*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -51,7 +56,7 @@ body{
   font-size: 1.2em;
    text-decoration: none;
 }
-
+/*Social links*/
 .socials {
   display: flex;
   justify-content: space-between;
@@ -61,6 +66,81 @@ body{
 .socials i {
   height: 10%;
   padding-right: 10px;
+}
+
+/*Intro bubble*/
+
+.bubble1 {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 70vh;
+}
+
+.bubble1_intro {
+  background-color: rgb(219, 219, 219);
+  padding: 3em 4em;
+  border-radius: 2.5em;
+  opacity: 80%;
+  z-index: 1;
+  margin-right: -40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.bubble1_desc {
+  background-color: black;
+  opacity: 80%;
+  padding: 3em;
+  border-radius: 2em;
+  z-index: 2;
+  margin-top:10%;
+  box-shadow: 0 30px 24px rgba(0, 0, 0, 0.3);
+  width: 295px;
+}
+
+.bubble1_desc h2{
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.name_en{
+ animation:  typingEN 2s;
+}
+.name_cn{
+  animation:  typingCN 3s;
+}
+
+.name_jp {
+ animation:  typingJP 4s, blink-caret 1s step-end infinite;
+ border-right: .15em solid yellow;
+}
+
+.bubble2 {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 25vh;
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow; }
+}
+
+@keyframes typingEN {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typingCN {
+  from { width: 0 }
+  50% {width: 0;}
+  to { width: 100% }
+}
+
+@keyframes typingJP {
+  from { width: 0 }
+  66% {width: 0;}
+  to { width: 100% }
 }
 /* Mobile styles */
 @media (max-width: 768px) {
