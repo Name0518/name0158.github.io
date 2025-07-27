@@ -9,8 +9,14 @@
 
 body{
     min-height: 100vh;
+     background-image:"main.jpg";
+  background-repeat: no-repeat;
+  width: 100vh;
 }
 
+.mainLanding{
+ 
+}
 
 
 .header {
