@@ -17,12 +17,13 @@ body{
     background-image:url("images/main.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    max-width: 100vw;
+   overflow-x: hidden;
 }
 
 .mainLanding{
     min-height: 100vh;
-    backdrop-filter: blur(10px);
+     backdrop-filter: blur(10px);
 }
 
 
@@ -137,6 +138,18 @@ body{
   margin-top:10%;
   box-shadow: 0 30px 24px rgba(0, 0, 0, 0.3);
   width: 350px;
+}
+
+.bubble2_desc a{
+  color: gray;
+  text-decoration: none;
+   transition: 0.7s;
+}
+
+.bubble2_desc h2 :hover{
+  color: black;
+  font-size: 1.1em;
+  transition: 0.7s;
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -256,5 +269,7 @@ body{
 
 .bubble2_desc h2 {
   font-size: 5vw;
+  text-decoration: none;
 }
+
 }
