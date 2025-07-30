@@ -151,6 +151,11 @@ body{
   font-size: 1.1em;
   transition: 0.7s;
 }
+
+.codePage{
+  min-height: 100vh;
+}
+
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: rgb(255, 208, 0); }
