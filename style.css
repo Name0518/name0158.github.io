@@ -14,15 +14,15 @@
 
 body{
     min-height: 100vh;
-    background-image:url("images/main.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     max-width: 100vw;
    overflow-x: hidden;
 }
 
 .mainLanding{
     min-height: 100vh;
+     background-image:url("images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
      backdrop-filter: blur(10px);
 }
 
@@ -154,6 +154,34 @@ body{
 
 .codePage{
   min-height: 100vh;
+  background-color: rgb(230, 229, 229);
+  justify-items: center;
+}
+
+.skillsBox{
+  max-width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  gap: 1vw;
+}
+
+.titleBox{
+  height: 20vh;
+  justify-items: center;
+}
+
+.titleBox h2 {
+  justify-self: auto;
+}
+
+.defaultSkill{
+  padding:4em 10em 10em 4em;
+  background-color: white;
+  border-radius: 2em;
+}
+
+.defaultSkill > p {
+  font-size: 1.7em;
 }
 
 @keyframes blink-caret {
