@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Layout</title>
+<style>
+  body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card.dark {
+    background: #1c2b39;
+    color: white;
+  }
+
+  .card.orange {
+    background: #1c2b39;
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .skill-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .progress {
+    height: 100%;
+    background: #7f8fa6;
+  }
+</style>
+</head>
+<body>
+
+<div class="skills-grid">
+  <div class="card">
+    <div class="skill-title">JavaScript / TypeScript</div>
+    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+  </div>
+
+  <div class="card dark">
+    <p>I developed some personal websites and the 
+      <a href="#" style="color:lightblue">Microsoft 365 networking connectivity</a> frontend,
+      and contributed to the <a href="#" style="color:lightblue">FluentUI</a>.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">C# / .NET</div>
+    <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">Svelte</div>
+    <div class="progress-bar"><div class="progress" style="width: 60%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">C++</div>
+    <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">Objective-C</div>
+    <div class="progress-bar"><div class="progress" style="width: 50%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">Python</div>
+    <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">Rust</div>
+    <div class="progress-bar"><div class="progress" style="width: 40%"></div></div>
+  </div>
+
+  <div class="card">
+    <div class="skill-title">Data Structure / Algorithms / ACM-ICPC</div>
+    <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+  </div>
+
+  <div class="card orange">Skills</div>
+
+  <div class="card">
+    <div class="skill-title">Unity3D</div>
+    <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -3,7 +3,6 @@ const front = document.querySelector('.bubble1')
 const back = document.querySelector('.bubble2')
 
 
-
 const sensFront = 1000
 const sensBack = 1000
 
@@ -27,3 +26,28 @@ mouse.addEventListener('mousemove', e=> {
 }% ) ` ;
 })
 }
+
+
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function changeBackground(scrollPos) {
+  if (scrollPos > 500 && scrollPos < 2000) {
+    document.body.style.backgroundImage = "url('images/programmador.jpg')";
+  } else {
+    document.body.style.backgroundImage = ""; // reset to default
+  }
+}
+
+document.addEventListener("scroll", () => {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      changeBackground(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
+});
