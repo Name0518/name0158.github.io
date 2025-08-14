@@ -181,6 +181,7 @@ body {
     min-height: 80vh;
     max-width: 75vw;
     justify-self: center;
+    margin-top: 5vh;
 }
 
 .card {
@@ -267,6 +268,8 @@ body {
     cursor: pointer;
     justify-self: center;
     margin: 6%;
+    animation: fade-in linear;
+    animation-timeline: view();
 }
 
 .project-card:hover {
@@ -295,6 +298,18 @@ body {
     font-size: 0.9rem;
     color: #ccc;
     margin-top: 0.5rem;
+}
+
+@keyframes fade-in {
+    from,
+    to {
+        scale: 0.93;
+        opacity: 50%;
+    }
+    50% {
+        scale: 1.0;
+        opacity: 100%;
+    }
 }
 
 @keyframes blink-caret {
