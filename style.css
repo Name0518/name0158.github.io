@@ -300,6 +300,24 @@ body {
     margin-top: 0.5rem;
 }
 
+.photography {
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.photography_card {
+    justify-self: center;
+    width: 80vw;
+    height: 70vh;
+    background-color: rgba(235, 235, 235, 0.75);
+    padding: 3em;
+    border-radius: 3em;
+}
+
+.photography_card>h1 {
+    font-size: 3em;
+}
+
 @keyframes fade-in {
     from,
     to {
