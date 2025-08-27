@@ -18,8 +18,8 @@ body {
     background-image: url("images/main.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     background-attachment: fixed;
+    background-size: cover;
     transition: background 0.5s ease-in-out;
 }
 
@@ -232,6 +232,7 @@ body {
     color: white;
     margin-bottom: 2rem;
     justify-self: center;
+    text-align: center;
 }
 
 .textTitle {
@@ -302,20 +303,24 @@ body {
 
 .photography {
     height: 100vh;
-    margin-top: 10vh;
+    margin-top: 30vh;
 }
 
 .photography_card {
     justify-self: center;
-    width: 80vw;
+    width: 60vw;
     height: 70vh;
     background-color: rgba(235, 235, 235, 0.75);
     padding: 3em;
     border-radius: 3em;
 }
 
-.photography_card>h1 {
-    font-size: 3em;
+.photography_card>.deviceDesc {
+    font-size: 1.4em;
+}
+
+.photography_card>.limitedDevices {
+    font-size: 2em;
 }
 
 @keyframes fade-in {

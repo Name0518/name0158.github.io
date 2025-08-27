@@ -35,8 +35,21 @@ let ticking = false;
 function changeTheme(scrollPos) {
     const cards = document.querySelectorAll(".card"); // get all cards
     const projectCard = document.querySelectorAll(".projectCard");
-    if (scrollPos > 500 && scrollPos < 2000) {
+    if (scrollPos > 500 && scrollPos <= 2500) {
         document.body.style.backgroundImage = "url('images/programmador.jpg')";
+        cards.forEach(card => {
+            card.style.backgroundColor = "rgba(61, 61, 61, 0.75)";
+            card.style.borderColor = ""; // white border
+            card.style.color = "";
+        });
+
+        projectCard.forEach(pc => {
+            pc.style.backgroundColor = "";
+            pc.style.borderColor = "#ffffff";
+            pc.style.color = "#000000ff";
+        });
+    } else if (scrollPos > 2500) {
+        document.body.style.backgroundImage = "url('images/droneBackground.jpg')";
         cards.forEach(card => {
             card.style.backgroundColor = "rgba(61, 61, 61, 0.75)";
             card.style.borderColor = ""; // white border
